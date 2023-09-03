@@ -4,5 +4,6 @@ ThisBuild / scalaVersion := "2.13.11"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "scalaFirst"
+    name := "scalaFirst",
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.16" % Test
   )
