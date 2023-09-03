@@ -5,7 +5,7 @@ object C130 extends App {
   // Let's チャレンジ！！
   val line = scala.io.StdIn.readLine
   val m = line.toInt
-  val lineSeq = for (i <- 1 to m) yield scala.io.StdIn.readLine.toSeq
+  val lineSeq = for (_ <- 1 to m) yield scala.io.StdIn.readLine.toSeq
   println(lineSeq.map(x => x.toString()
                             .split(" "))
                  .count(array => array(0).equals("n") || array(1).equals("n")))
